@@ -2,13 +2,13 @@
     "347-no-country": "A fatura de %type% com NIF %cifnif% não tem país e é obrigatório",
     "347-no-data": "Sem resultados",
     "347-no-province": "A fatura de %type% com NIF %cifnif% não tem província e é obrigatório",
-    "company-admin-no-data": "La empresa %company% no tiene administrador y es obligatorio",
+    "company-admin-no-data": "A empresa %company% não tem administrador e é obrigatório",
     "company-phone-no-data": "A empresa %company% não tem telefone e é obrigatório",
     "customer-supplier": "Cliente \/ Fornecedor",
     "examine": "Examinar",
     "exclude-347": "E",
     "exclude-irpf": "Excluir IRPF",
     "model-347": "Modelo 347",
-    "model-347-p": "El Modelo 347 es una declaración anual informativa de operaciones con terceras personas. Los empresarios y profesionales están obligados a la presentación del Modelo 347 siempre que hayan realizado operaciones con terceros por importe superior a 3.005,06 € durante el año natural (se puede cambiar la cantidad), computando de forma separada las entregas y las adquisiciones de bienes y servicios.",
-    "txt-for-treasury": "TXT para hacienda"
+    "model-347-p": "O Modelo 347 é uma declaração anual informativa de operações com terceiros. Os empresários e profissionais estão obrigados a apresentar o Modelo 347 sempre que tenham realizado operações com terceiros no montante superior a 3.005,06 € durante o ano natural (pode-se alterar o valor), computando separadamente as entregas e as aquisições de bens e serviços.",
+    "txt-for-treasury": "TXT para a receita"
 }

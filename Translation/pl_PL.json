@@ -5,10 +5,10 @@
     "company-admin-no-data": "La empresa %company% no tiene administrador y es obligatorio",
     "company-phone-no-data": "La empresa %company% no tiene teléfono y es obligatorio",
     "customer-supplier": "Cliente \/ Proveedor",
-    "examine": "Examinar",
+    "examine": "Przeglądaj",
     "exclude-347": "Excluir del 347",
-    "exclude-irpf": "Excluir IRPF",
-    "model-347": "Modelo 347",
-    "model-347-p": "El Modelo 347 es una declaración anual informativa de operaciones con terceras personas. Los empresarios y profesionales están obligados a la presentación del Modelo 347 siempre que hayan realizado operaciones con terceros por importe superior a 3.005,06 € durante el año natural (se puede cambiar la cantidad), computando de forma separada las entregas y las adquisiciones de bienes y servicios.",
-    "txt-for-treasury": "TXT para hacienda"
+    "exclude-irpf": "Wyklucz IRPF",
+    "model-347": "Model 347",
+    "model-347-p": "Model 347 to roczne oświadczenie informacyjne o transakcjach z osobami trzecimi. Przedsiębiorcy i profesjonaliści są zobowiązani do złożenia Modelu 347, jeśli dokonali transakcji z osobami trzecimi na kwotę przekraczającą 3.005,06 € w roku kalendarzowym (kwotę można zmienić), obliczając oddzielnie dostawy i zakupy towarów i usług.",
+    "txt-for-treasury": "TXT do skarbu państwa"
 }

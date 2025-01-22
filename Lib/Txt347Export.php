@@ -1,7 +1,7 @@
 <?php
 /**
  * This file is part of Modelo347 plugin for FacturaScripts
- * Copyright (C) 2020-2024 Carlos Garcia Gomez <carlos@facturascripts.com>
+ * Copyright (C) 2020-2025 Carlos Garcia Gomez <carlos@facturascripts.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as
@@ -19,7 +19,7 @@
 
 namespace FacturaScripts\Plugins\Modelo347\Lib;
 
-use FacturaScripts\Core\Base\ToolBox;
+use FacturaScripts\Core\Tools;
 use FacturaScripts\Dinamic\Model\Ejercicio;
 use FacturaScripts\Dinamic\Model\Empresa;
 use FacturaScripts\Dinamic\Model\Pais;
@@ -71,7 +71,7 @@ class Txt347Export
         // forzamos al formato de 2 decimales sin signo y sin separador de decimales
         // nota las funciones intval y cast de (int) no funcionan correctamente si no se hace el round() sin decimales
         $amount = (int)round(abs($amount) * 100.00);
-        return $signed . self::formatString($amount, $length -1, '0', $align);
+        return $signed . self::formatString($amount, $length - 1, '0', $align);
     }
 
     protected static function formatOnlyNumber(string $number): string
@@ -437,7 +437,7 @@ class Txt347Export
             '/Ý/' => 'Y', '/Ÿ/' => 'Y'
         ];
 
-        $txtNoHtml = ToolBox::utils()->noHtml($txt) ?? '';
+        $txtNoHtml = Tools::noHtml($txt) ?? '';
         return preg_replace(array_keys($changes), $changes, $txtNoHtml);
     }
 }
