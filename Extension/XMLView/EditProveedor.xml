@@ -23,8 +23,8 @@
 <view>
     <columns>        
         <group name="comercial" title="commercial-terms" numcolumns="12">           
-            <column name="excluir347" order="205" numcolumns="2">
-                <widget type="select" fieldname="excluir347" translate="true" icon="fa-solid fa-person" required="true">                
+            <column name="exclude-347" order="205" numcolumns="2">
+                <widget type="select" fieldname="excluir347" translate="true" required="true">                
                     <values title="no">0</values>
                     <values title="yes">1</values>                    
                 </widget>
