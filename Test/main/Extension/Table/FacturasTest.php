@@ -64,8 +64,6 @@ final class FacturasTest extends TestCase
         self::setDefaultSettings();
         self::installAccountingPlan();
         self::removeTaxRegularization();
-
-        new FacturaCliente()->install();
         
         // crear la tabla user (necesario para la factura)
     }
