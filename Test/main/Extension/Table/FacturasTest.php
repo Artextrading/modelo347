@@ -49,6 +49,7 @@ final class FacturasTest extends TestCase
     public static function setUpBeforeClass(): void
     {
         // configuración por defecto para el almacén por defecto
+        new User();
         self::setDefaultSettings();
         self::installAccountingPlan();
         self::removeTaxRegularization();
@@ -65,7 +66,6 @@ final class FacturasTest extends TestCase
         new Asiento();
         new Empresa();
         new EstadoDocumento();
-        new User();
     }
 
     public function testExistsPropertyFacturaCliente()
