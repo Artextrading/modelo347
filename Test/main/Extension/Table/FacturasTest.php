@@ -45,7 +45,6 @@ final class FacturasTest extends TestCase
 
     public function testExistsPropertyFacturaCliente()
     {
-
         // crear el cliente
         $customer = new Cliente();
         $customer->cifnif = 'B' . mt_rand(1, 999999);
@@ -57,12 +56,12 @@ final class FacturasTest extends TestCase
         // crear la factura
         $invoice = new FacturaCliente();
         $invoice->setSubject($customer);
-        $invoice->numero2 = 'INV-'.mt_rand(1, 99999).'-' . mt_rand(1, 99999);
+        $invoice->numero2 = 'INV-' . mt_rand(1, 99999) . '-' . mt_rand(1, 99999);
         $invoice->observaciones = 'Test';
         $invoice->excluir347 = true;
         $this->assertTrue($invoice->save(), 'cant-create-invoice');
         $this->assertTrue($invoice->exists(), 'invoice-not-exists');
-        
+
         // comprobar el campo
         $this->assertTrue($invoice->loadFromCode($invoice->idfactura), 'cant-create-load');
         $this->assertTrue($invoice->excluir347, 'value-not-saved');
@@ -74,6 +73,7 @@ final class FacturasTest extends TestCase
 
         // eliminar la factura
         $this->assertTrue($invoice->delete(), 'cant-delete-invoice');
+        $this->assertTrue($customer->getDefaultAddress()->delete());
         $this->assertTrue($customer->delete(), 'cant-delete-customer');
     }
 
@@ -90,7 +90,7 @@ final class FacturasTest extends TestCase
         // crear la factura de proveedor
         $invoice = new FacturaProveedor();
         $invoice->setSubject($suplier);
-        $invoice->numero2 = 'INV-'.mt_rand(1, 99999).'-' . mt_rand(1, 99999);
+        $invoice->numero2 = 'INV-' . mt_rand(1, 99999) . '-' . mt_rand(1, 99999);
         $invoice->observaciones = 'Test';
         $invoice->excluir347 = true;
         $this->assertTrue($invoice->save(), 'cant-create-invoice');
@@ -107,6 +107,7 @@ final class FacturasTest extends TestCase
 
         // eliminar la factura
         $this->assertTrue($invoice->delete(), 'cant-delete-invoice');
+        $this->assertTrue($suplier->getDefaultAddress()->delete());
         $this->assertTrue($suplier->delete(), 'cant-delete-suplier');
     }
 
