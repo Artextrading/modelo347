@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+<?php
+/**
  * This file is part of FacturaScripts
  * Copyright (C) 2017-2025 Carlos Garcia Gomez <carlos@facturascripts.com>
  *
@@ -15,18 +15,34 @@
  *
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+namespace FacturaScripts\Plugins\Modelo347\Extension\Model;
+
+use Closure;
+
+/**
+ * Auxiliar class for special actions into the business document.
+ *   - setSubject: Set Modelo347 attributes values from the subject of the document.
  *
- * @author Dainier Rojas Jiménez  <danredjim.com>
--->
-<view>
-    <columns>       
-        <group name="comercial" title="commercial-terms" numcolumns="12">           
-            <column name="exclude-347" order="205" numcolumns="2">
-                <widget type="select" fieldname="excluir347" translate="true" required="true">                
-                    <values title="no">0</values>
-                    <values title="yes">1</values>
-                </widget>
-            </column>
-        </group>       
-    </columns>
-</view>
+ * @author Jose Antonio Cuello Principal  <yopli2000@gmail.com>
+ *
+ * @property bool excluir347
+ */
+class FacturaProveedor
+{
+    public function clear(): Closure
+    {
+        return function () {
+            $this->excluir347 = false;
+        };
+    }
+
+    public function setSubject(): Closure
+    {
+        return function ($subject) {
+            if (property_exists($subject, 'excluir347')) {
+                $this->excluir347 = $subject->excluir347;
+            }
+        };
+    }
+}

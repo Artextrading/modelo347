@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
  * This file is part of FacturaScripts
- * Copyright (C) 2017-2023 Carlos Garcia Gomez <carlos@facturascripts.com>
+ * Copyright (C) 2017-2025 Carlos Garcia Gomez <carlos@facturascripts.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as
@@ -16,16 +16,15 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  * 
- * @author Artex Trading sa     <jcuello@artextrading.com>
  * @author Dainier Rojas Jiménez  <danredjim.com>
 -->
 <view>
     <columns>        
         <group name="comercial" title="commercial-terms" numcolumns="12">           
             <column name="exclude-347" order="205" numcolumns="2">
-                <widget type="select" fieldname="excluir347" translate="true" required="true">                
+                <widget type="select" fieldname="excluir347" translate="true" required="true">
                     <values title="no">0</values>
-                    <values title="yes">1</values>                    
+                    <values title="yes">1</values>
                 </widget>
             </column>
         </group>          
