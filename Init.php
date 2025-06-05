@@ -58,18 +58,18 @@ final class Init extends InitClass
     public function update(): void
     {
         new User();
-        new Agente();
-        new Proveedor();
-        new Almacen();
-        new Cliente();
-        new Divisa();
-        new Ejercicio();
-        new FormaPago();
-        new Serie();
-        new AgenciaTransporte();
-        new Asiento();
-        new Empresa();
-        new EstadoDocumento();
+        // new Agente();
+        // new Proveedor();
+        // new Almacen();
+        // new Cliente();
+        // new Divisa();
+        // new Ejercicio();
+        // new FormaPago();
+        // new Serie();
+        // new AgenciaTransporte();
+        // new Asiento();
+        // new Empresa();
+        // new EstadoDocumento();
         new FacturaCliente();
         new FacturaProveedor();
     }
