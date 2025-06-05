@@ -50,11 +50,6 @@ final class FacturasTest extends TestCase
     {
         // configuración por defecto para el almacén por defecto
         new User();
-        self::setDefaultSettings();
-        self::installAccountingPlan();
-        self::removeTaxRegularization();
-
-        // crear la tabla user (necesario para la factura)
         new Agente();
         new Almacen();
         new Cliente();
@@ -66,6 +61,11 @@ final class FacturasTest extends TestCase
         new Asiento();
         new Empresa();
         new EstadoDocumento();
+        self::setDefaultSettings();
+        self::installAccountingPlan();
+        self::removeTaxRegularization();
+        
+        // crear la tabla user (necesario para la factura)
     }
 
     public function testExistsPropertyFacturaCliente()
