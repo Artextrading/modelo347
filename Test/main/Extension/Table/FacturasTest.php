@@ -54,6 +54,17 @@ final class FacturasTest extends TestCase
         self::removeTaxRegularization();
 
         // crear la tabla user (necesario para la factura)
+        new Agente();
+        new Almacen();
+        new Cliente();
+        new Divisa();
+        new Ejercicio();
+        new FormaPago();
+        new Serie();
+        new AgenciaTransporte();
+        new Asiento();
+        new Empresa();
+        new EstadoDocumento();
         new User();
     }
 
