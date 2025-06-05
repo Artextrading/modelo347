@@ -65,7 +65,8 @@ final class FacturasTest extends TestCase
         new EstadoDocumento();
         new User();
         new Proveedor();
-        new Serie();
+        new FacturaCliente();
+        new FacturaProveedor();
     }
 
     public function testExistsPropertyFacturaCliente()
