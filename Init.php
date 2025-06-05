@@ -24,6 +24,7 @@ use FacturaScripts\Core\Base\AjaxForms\SalesHeaderHTML;
 use FacturaScripts\Core\Template\InitClass;
 use FacturaScripts\Dinamic\Model\FacturaCliente;
 use FacturaScripts\Dinamic\Model\FacturaProveedor;
+use FacturaScripts\Dinamic\Model\User;
 
 /**
  * Description of Init
@@ -44,6 +45,7 @@ final class Init extends InitClass
 
     public function update(): void
     {
+        new User();
         new FacturaCliente();
         new FacturaProveedor();
     }
