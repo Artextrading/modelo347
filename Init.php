@@ -24,19 +24,7 @@ use FacturaScripts\Core\Base\AjaxForms\SalesHeaderHTML;
 use FacturaScripts\Core\Template\InitClass;
 use FacturaScripts\Dinamic\Model\FacturaCliente;
 use FacturaScripts\Dinamic\Model\FacturaProveedor;
-use FacturaScripts\Dinamic\Model\Proveedor;
 use FacturaScripts\Dinamic\Model\User;
-use FacturaScripts\Dinamic\Model\AgenciaTransporte;
-use FacturaScripts\Dinamic\Model\Agente;
-use FacturaScripts\Dinamic\Model\Almacen;
-use FacturaScripts\Dinamic\Model\Asiento;
-use FacturaScripts\Dinamic\Model\Cliente;
-use FacturaScripts\Dinamic\Model\Divisa;
-use FacturaScripts\Dinamic\Model\Ejercicio;
-use FacturaScripts\Dinamic\Model\Empresa;
-use FacturaScripts\Dinamic\Model\EstadoDocumento;
-use FacturaScripts\Dinamic\Model\FormaPago;
-use FacturaScripts\Dinamic\Model\Serie;
 
 /**
  * Description of Init
@@ -58,18 +46,6 @@ final class Init extends InitClass
     public function update(): void
     {
         new User();
-        // new Agente();
-        // new Proveedor();
-        // new Almacen();
-        // new Cliente();
-        // new Divisa();
-        // new Ejercicio();
-        // new FormaPago();
-        // new Serie();
-        // new AgenciaTransporte();
-        // new Asiento();
-        // new Empresa();
-        // new EstadoDocumento();
         new FacturaCliente();
         new FacturaProveedor();
     }
